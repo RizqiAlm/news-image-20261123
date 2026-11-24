@@ -1,7 +1,9 @@
 // News-image entry for Monday 23 November 2026 (Node 22, standard library only).
 // The program copies the front-page image beside it to /output/entry.png.
 // The image is drawn in code by build_image.py (PIL, deterministic, no network).
+// Deterministic: the same input bytes always produce the same output bytes.
 // The gate takes a whole PNG of at most 1 MiB and 1024 by 1024 pixels.
+// Output path comes from MAKEFUN_OUTPUT_DIR, or defaults to /output.
 //
 // Outside the grader's container, MAKEFUN_OUTPUT_DIR stands in for /output:
 //   mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
